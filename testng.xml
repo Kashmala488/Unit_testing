@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Application Test Suite" parallel="classes" thread-count="5">
+
+  <!-- Suite for User Tests -->
+  <test name="User Tests" preserve-order="true">
+    <parameter name="userId" value="1"/>
+    
+    <groups>
+      <run>
+        <include name="user-registration"/>
+        <include name="user-authentication"/>
+        <exclude name="user-deletion"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="test.UserServiceTest">
+        <methods>
+          <include name="testRegisterUser"/>
+          <include name="testAuthenticateUser"/>
+        </methods>
+      </class>
+      <class name="test.UserRepositoryTest">
+        <methods>
+          <include name="testFindById"/>
+          <include name="testSaveUser"/>
+          <include name="testDeleteUser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <!-- Suite for Product Tests -->
+  <test name="Product Tests" preserve-order="true">
+    <parameter name="productId" value="1"/>
+    
+    <groups>
+      <run>
+        <include name="product-addition"/>
+        <include name="product-update"/>
+        <exclude name="product-deletion"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="test.ProductServiceTest">
+        <methods>
+          <include name="testAddProduct"/>
+          <include name="testUpdateProduct"/>
+        </methods>
+      </class>
+      <class name="test.ProductRepositoryTest">
+        <methods>
+          <include name="testFindById"/>
+          <include name="testDeleteProduct"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <!-- Suite for Order Tests -->
+  <test name="Order Tests" preserve-order="true">
+    <parameter name="orderId" value="1"/>
+
+    <groups>
+      <run>
+        <include name="order-creation"/>
+        <include name="order-cancelation"/>
+        <exclude name="order-deletion"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="test.OrderServiceTest">
+        <methods>
+          <!-- Pass parameters specifically to testCreateOrder -->
+          <include name="testCreateOrder">
+            <parameter name="orderId" value="101"/>
+            <parameter name="userId" value="501"/>
+            <parameter name="product" value="Sample Product"/>
+          </include>
+          <include name="testCancelOrder"/>
+        </methods>
+      </class>
+      <class name="test.OrderRepositoryTest">
+        <methods>
+          <include name="testCreateOrder"/>
+          <include name="testGetOrderById"/>
+          <include name="testDeleteOrder"/>
+          <include name="testFindByUserId"/>
+          <include name="testFindAll"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <!-- Separate Suite for Order Repository Tests with XML parameters -->
+  <test name="OrderRepositoryTestXML">
+    <parameter name="userId" value="101"/>
+    <classes>
+      <class name="test.OrderRepositoryTest"/>
+    </classes>
+  </test>
+
+</suite>
