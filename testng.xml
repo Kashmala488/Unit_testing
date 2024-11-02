@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
 <suite name="Application Test Suite" parallel="classes" thread-count="5">
-
+  
   <!-- Suite for User Tests -->
-  <test name="User Tests" preserve-order="true">
-    <parameter name="userId" value="1"/>
-    
+  <test name="User Tests" preserve-order="true" thread-count="2">
+    <parameter name="userId" value="1"/> <!-- Preserved parameter -->
+    <parameter name="username" value="testUser"/> <!-- Example Username -->
+    <parameter name="password" value="testPassword"/> <!-- Example Password -->
     <groups>
       <run>
         <include name="user-registration"/>
@@ -14,7 +14,6 @@
         <exclude name="user-deletion"/>
       </run>
     </groups>
-
     <classes>
       <class name="test.UserServiceTest">
         <methods>
@@ -32,10 +31,11 @@
     </classes>
   </test>
 
-  <!-- Suite for Product Tests -->
-  <test name="Product Tests" preserve-order="true">
-    <parameter name="productId" value="1"/>
-    
+  <!-- Integrated Suite for Product Tests -->
+  <test name="Product Tests" preserve-order="true" thread-count="2">
+    <parameter name="productId" value="8"/>
+    <parameter name="productName" value="ProductH"/>
+    <parameter name="category" value="Category3"/>
     <groups>
       <run>
         <include name="product-addition"/>
@@ -43,7 +43,6 @@
         <exclude name="product-deletion"/>
       </run>
     </groups>
-
     <classes>
       <class name="test.ProductServiceTest">
         <methods>
@@ -55,15 +54,15 @@
         <methods>
           <include name="testFindById"/>
           <include name="testDeleteProduct"/>
+          <include name="testSaveProductFromXML"/> <!-- Method to read product data from XML -->
         </methods>
       </class>
     </classes>
   </test>
 
   <!-- Suite for Order Tests -->
-  <test name="Order Tests" preserve-order="true">
+  <test name="Order Tests" preserve-order="true" thread-count="2">
     <parameter name="orderId" value="1"/>
-
     <groups>
       <run>
         <include name="order-creation"/>
@@ -71,7 +70,6 @@
         <exclude name="order-deletion"/>
       </run>
     </groups>
-
     <classes>
       <class name="test.OrderServiceTest">
         <methods>
@@ -97,10 +95,20 @@
   </test>
 
   <!-- Separate Suite for Order Repository Tests with XML parameters -->
-  <test name="OrderRepositoryTestXML">
+  <test name="OrderRepositoryTestXML" thread-count="1">
     <parameter name="userId" value="101"/>
     <classes>
       <class name="test.OrderRepositoryTest"/>
+    </classes>
+  </test>
+
+  <!-- Integrated User Repository Tests -->
+  <test name="User Repository Tests">
+    <parameter name="userId" value="7"/>
+    <parameter name="username" value="xmlUser"/>
+    <parameter name="password" value="xmlPass"/>
+    <classes>
+      <class name="UserRepositoryTest"/>
     </classes>
   </test>
 
