@@ -1,89 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-01T10:41:46 PKT" name="Default suite" finished-at="2024-11-01T10:41:47 PKT" duration-ms="551">
+  <suite started-at="2024-11-01T19:18:02 PKT" name="Default suite" finished-at="2024-11-01T19:18:03 PKT" duration-ms="839">
     <groups>
     </groups>
-    <test started-at="2024-11-01T10:41:46 PKT" name="Default test" finished-at="2024-11-01T10:41:47 PKT" duration-ms="551">
-      <class name="OrderServiceTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:46 PKT" name="setUp" finished-at="2024-11-01T10:41:46 PKT" duration-ms="5" status="PASS">
+    <test started-at="2024-11-01T19:18:02 PKT" name="Default test" finished-at="2024-11-01T19:18:03 PKT" duration-ms="839">
+      <class name="OrderTests.OrderServiceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:02 PKT" name="setUp" finished-at="2024-11-01T19:18:02 PKT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUpdateOrder()[pri:1, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:46 PKT" name="testUpdateOrder" finished-at="2024-11-01T10:41:46 PKT" duration-ms="9" status="PASS">
+        <test-method signature="testGetOrderById()[pri:1, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:02 PKT" name="testGetOrderById" finished-at="2024-11-01T19:18:03 PKT" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetOrderById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateOrder()[pri:1, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testUpdateOrder" finished-at="2024-11-01T19:18:03 PKT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateOrder -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:46 PKT" name="setUp" finished-at="2024-11-01T10:41:46 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCancelOrder()[pri:2, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:46 PKT" name="testCancelOrder" finished-at="2024-11-01T10:41:46 PKT" duration-ms="1" status="PASS">
+        <test-method signature="testCancelOrder()[pri:2, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testCancelOrder" finished-at="2024-11-01T19:18:03 PKT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelOrder -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetOrderById(Order.Order)[pri:3, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testGetOrderById" data-provider="orderDataFromExcel" finished-at="2024-11-01T10:41:47 PKT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Order.Order@1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetOrderById -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetOrderById(Order.Order)[pri:3, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testGetOrderById" data-provider="orderDataFromExcel" finished-at="2024-11-01T10:41:47 PKT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Order.Order@2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetOrderById -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetOrderById(Order.Order)[pri:3, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testGetOrderById" data-provider="orderDataFromExcel" finished-at="2024-11-01T10:41:47 PKT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Order.Order@3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetOrderById -->
-        <test-method signature="testGetOrderById(Order.Order)[pri:3, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testGetOrderById" data-provider="orderDataFromExcel" finished-at="2024-11-01T10:41:47 PKT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Order.Order@4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetOrderById -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreateOrder(java.lang.Long,java.lang.Long,java.lang.String)[pri:4, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testCreateOrder" finished-at="2024-11-01T10:41:47 PKT" duration-ms="5" status="PASS">
+        <test-method signature="testCreateOrder(java.lang.Long,java.lang.Long,java.lang.String)[pri:4, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testCreateOrder" finished-at="2024-11-01T19:18:03 PKT" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateOrder -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-01T10:41:47 PKT" duration-ms="4" status="PASS">
+        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-01T19:18:03 PKT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,15 +72,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListOrdersByUser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="setUp" finished-at="2024-11-01T10:41:47 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderServiceTest@3023df74]" started-at="2024-11-01T10:41:47 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-01T10:41:47 PKT" duration-ms="0" status="PASS">
+        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-01T19:18:03 PKT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,7 +96,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListOrdersByUser -->
-      </class> <!-- OrderServiceTest -->
+      </class> <!-- OrderTests.OrderServiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

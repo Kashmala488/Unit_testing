@@ -1,3 +1,4 @@
+package OrderTests;
 import Order.Order;
 import Order.OrderService;
 import org.apache.poi.ss.usermodel.*;
@@ -24,34 +25,6 @@ public class OrderServiceTest {
     public void setUp() {
         orderService = new OrderService();
     }
-
-    @DataProvider(name = "orderDataFromExcel")
-    public Object[][] readOrderDataFromExcel() throws Exception {
-        FileInputStream file = new FileInputStream(new File("src/test/resources/Order/Book1.xlsx"));
-        Workbook workbook = null;
-        List<Object[]> data = new ArrayList<>();
-        try {
-            workbook = new XSSFWorkbook(file);
-            Sheet sheet = workbook.getSheetAt(0);
-
-            for (int i = 1; i <= sheet.getLastRowNum(); i++) { 
-                Row row = sheet.getRow(i);
-
-                Long id = (long) row.getCell(0).getNumericCellValue();
-                Long userId = (long) row.getCell(1).getNumericCellValue();
-                String product = row.getCell(2).getStringCellValue();
-
-                data.add(new Object[]{new Order(id, userId, product)});
-            }
-        } finally {
-            if (workbook != null) {
-                workbook.close();
-            }
-            file.close();
-        }
-        return data.toArray(new Object[0][]);
-    }
-
    
 
     @Test(priority=4)
@@ -63,14 +36,36 @@ public class OrderServiceTest {
         assertEquals(orderService.getOrderById(order.getOrderId()), order);
     }
 
-    @Test(priority=3,dataProvider = "orderDataFromExcel")
-    public void testGetOrderById(Order order) {
-        orderService.createOrder(order);
-        Order fetchedOrder = orderService.getOrderById(order.getOrderId());
-        assertNotNull(fetchedOrder);
-        assertEquals(fetchedOrder, order);
-    }
+    @Test(priority = 1)
+    public void testGetOrderById() throws IOException {
+        Order order = null;
 
+        FileInputStream file = new FileInputStream("src/test/resources/Order/Orders.xlsx");
+        Workbook workbook = null;
+
+        try {
+            workbook = new XSSFWorkbook(file);
+            Sheet sheet = workbook.getSheetAt(0);
+            Row row = sheet.getRow(1); 
+            Long orderId = (long) row.getCell(0).getNumericCellValue();
+            Long userId = (long) row.getCell(1).getNumericCellValue();
+            String productId = row.getCell(2).getStringCellValue();
+
+
+            order = new Order(orderId, userId, productId); 
+
+            orderService.createOrder(order); 
+
+            Order fetchedOrder = orderService.getOrderById(order.getOrderId());
+            assertNotNull(fetchedOrder, "Fetched order should not be null.");
+            assertEquals(fetchedOrder, order, "Fetched order should match the original order.");
+        } finally {
+            if (workbook != null) {
+                workbook.close(); 
+            }
+            file.close(); 
+        }
+    }
     @Test(priority=1)
     public void testUpdateOrder() {
         Order order = new Order(1L, 101L, "ProductA");
