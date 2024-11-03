@@ -1,37 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="52" passed="52" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-01T19:18:02 PKT" name="Default suite" finished-at="2024-11-01T19:18:03 PKT" duration-ms="839">
+  <suite started-at="2024-11-03T15:42:17 PKT" name="Default suite" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1215">
     <groups>
     </groups>
-    <test started-at="2024-11-01T19:18:02 PKT" name="Default test" finished-at="2024-11-01T19:18:03 PKT" duration-ms="839">
-      <class name="OrderTests.OrderServiceTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:02 PKT" name="setUp" finished-at="2024-11-01T19:18:02 PKT" duration-ms="5" status="PASS">
+    <test started-at="2024-11-03T15:42:17 PKT" name="Default test" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1215">
+      <class name="UserTests.UserRepositoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGetOrderById()[pri:1, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:02 PKT" name="testGetOrderById" finished-at="2024-11-01T19:18:03 PKT" duration-ms="741" status="PASS">
+        <test-method signature="testSaveUser()[pri:1, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testSaveUser" finished-at="2024-11-03T15:42:18 PKT" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveUser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindById()[pri:2, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testFindById" finished-at="2024-11-03T15:42:18 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteUser()[pri:3, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testDeleteUser" finished-at="2024-11-03T15:42:18 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindAllUsers()[pri:4, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testFindAllUsers" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindAllUsers -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testExistsByUsername()[pri:5, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testExistsByUsername" finished-at="2024-11-03T15:42:18 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExistsByUsername -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddUsersFromExcel()[pri:6, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testAddUsersFromExcel" finished-at="2024-11-03T15:42:18 PKT" duration-ms="628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUsersFromExcel -->
+        <test-method signature="testAddUserFromXML(java.lang.Long,java.lang.String,java.lang.String)[pri:7, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="testAddUserFromXML" finished-at="2024-11-03T15:42:18 PKT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xmlUser]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[xmlPass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUserFromXML -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTests.UserRepositoryTest@4c402120]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- UserTests.UserRepositoryTest -->
+      <class name="UserTests.UserServiceTest">
+        <test-method signature="testUpdateUserFromExcel()[pri:1, instance:UserTests.UserServiceTest@3bf7ca37]" started-at="2024-11-03T15:42:18 PKT" name="testUpdateUserFromExcel" finished-at="2024-11-03T15:42:19 PKT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserFromExcel -->
+        <test-method signature="testAuthenticateUserFromXML(java.lang.String,java.lang.String)[pri:2, instance:UserTests.UserServiceTest@3bf7ca37]" started-at="2024-11-03T15:42:19 PKT" name="testAuthenticateUserFromXML" finished-at="2024-11-03T15:42:19 PKT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[defaultUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[defaultPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateUserFromXML -->
+      </class> <!-- UserTests.UserServiceTest -->
+      <class name="UserRepositoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveUser()[pri:1, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testSaveUser" finished-at="2024-11-03T15:42:18 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveUser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindById()[pri:2, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testFindById" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindById -->
+        <test-method signature="testDeleteUser()[pri:3, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testDeleteUser" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindAllUsers()[pri:4, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testFindAllUsers" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindAllUsers -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testExistsByUsername()[pri:5, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testExistsByUsername" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExistsByUsername -->
+        <test-method signature="testAddUsersFromExcel()[pri:6, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testAddUsersFromExcel" finished-at="2024-11-03T15:42:18 PKT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUsersFromExcel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddUserFromXML(java.lang.Long,java.lang.String,java.lang.String)[pri:7, instance:UserRepositoryTest@3857f613]" started-at="2024-11-03T15:42:18 PKT" name="testAddUserFromXML" finished-at="2024-11-03T15:42:18 PKT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xmlUser]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[xmlPass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUserFromXML -->
+      </class> <!-- UserRepositoryTest -->
+      <class name="ProductTests.ProductServiceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddProduct()[pri:1, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testAddProduct" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProduct -->
+        <test-method signature="testGetProductById()[pri:2, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testGetProductById" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetProductById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateProduct()[pri:3, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testUpdateProduct" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateProduct -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteProduct()[pri:4, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testDeleteProduct" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProduct -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testListAllProducts()[pri:5, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testListAllProducts" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListAllProducts -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddProductsFromExcel()[pri:6, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testAddProductsFromExcel" finished-at="2024-11-03T15:42:18 PKT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductsFromExcel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddProductFromXML(java.lang.Long,java.lang.String,java.lang.String)[pri:7, instance:ProductTests.ProductServiceTest@3c9754d8]" started-at="2024-11-03T15:42:18 PKT" name="testAddProductFromXML" finished-at="2024-11-03T15:42:18 PKT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProductH]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Category3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductFromXML -->
+      </class> <!-- ProductTests.ProductServiceTest -->
+      <class name="ProductServiceTest">
+        <test-method signature="testAddProduct()[pri:1, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testAddProduct" finished-at="2024-11-03T15:42:18 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProduct -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetProductById()[pri:2, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testGetProductById" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetProductById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateProduct()[pri:3, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testUpdateProduct" finished-at="2024-11-03T15:42:18 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateProduct -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteProduct()[pri:4, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testDeleteProduct" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProduct -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testListAllProducts()[pri:5, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testListAllProducts" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListAllProducts -->
+        <test-method signature="testAddProductsFromExcel()[pri:6, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testAddProductsFromExcel" finished-at="2024-11-03T15:42:18 PKT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductsFromExcel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddProductFromXML(java.lang.Long,java.lang.String,java.lang.String)[pri:7, instance:ProductServiceTest@198b6731]" started-at="2024-11-03T15:42:18 PKT" name="testAddProductFromXML" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProductH]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Category3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductFromXML -->
+      </class> <!-- ProductServiceTest -->
+      <class name="OrderTests.OrderServiceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetOrderById()[pri:1, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="testGetOrderById" finished-at="2024-11-03T15:42:19 PKT" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetOrderById -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUpdateOrder()[pri:1, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testUpdateOrder" finished-at="2024-11-01T19:18:03 PKT" duration-ms="3" status="PASS">
+        <test-method signature="testUpdateOrder()[pri:1, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="testUpdateOrder" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateOrder -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCancelOrder()[pri:2, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testCancelOrder" finished-at="2024-11-01T19:18:03 PKT" duration-ms="3" status="PASS">
+        <test-method signature="testCancelOrder()[pri:2, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="testCancelOrder" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelOrder -->
-        <test-method signature="testCreateOrder(java.lang.Long,java.lang.Long,java.lang.String)[pri:4, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testCreateOrder" finished-at="2024-11-01T19:18:03 PKT" duration-ms="5" status="PASS">
+        <test-method signature="testCreateOrder(java.lang.Long,java.lang.Long,java.lang.String)[pri:4, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="testCreateOrder" finished-at="2024-11-03T15:42:19 PKT" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +374,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateOrder -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-01T19:18:03 PKT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-03T15:42:19 PKT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,15 +398,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListOrdersByUser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="setUp" finished-at="2024-11-01T19:18:03 PKT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderTests.OrderServiceTest@459e9125]" started-at="2024-11-01T19:18:03 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-01T19:18:03 PKT" duration-ms="2" status="PASS">
+        <test-method signature="testListOrdersByUser(java.lang.Long,java.util.List)[pri:5, instance:OrderTests.OrderServiceTest@79079097]" started-at="2024-11-03T15:42:19 PKT" name="testListOrdersByUser" data-provider="userOrdersData" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,6 +419,187 @@
           </reporter-output>
         </test-method> <!-- testListOrdersByUser -->
       </class> <!-- OrderTests.OrderServiceTest -->
+      <class name="ProductTests.ProductRepositoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveAndFindById()[pri:1, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="testSaveAndFindById" finished-at="2024-11-03T15:42:18 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveAndFindById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDelete()[pri:2, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="testDelete" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindAll()[pri:3, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="testFindAll" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindAll -->
+        <test-method signature="testFindByCategory()[pri:4, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="testFindByCategory" finished-at="2024-11-03T15:42:18 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByCategory -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveProductsFromExcel()[pri:5, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="testSaveProductsFromExcel" finished-at="2024-11-03T15:42:18 PKT" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveProductsFromExcel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="setUp" finished-at="2024-11-03T15:42:18 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveProductFromXML(java.lang.Long,java.lang.String,java.lang.String)[pri:6, instance:ProductTests.ProductRepositoryTest@7c6908d7]" started-at="2024-11-03T15:42:18 PKT" name="testSaveProductFromXML" finished-at="2024-11-03T15:42:18 PKT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProductH]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Category3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveProductFromXML -->
+      </class> <!-- ProductTests.ProductRepositoryTest -->
+      <class name="UserServiceTest">
+        <test-method signature="testUpdateUserFromExcel()[pri:1, instance:UserServiceTest@4d1c00d0]" started-at="2024-11-03T15:42:19 PKT" name="testUpdateUserFromExcel" finished-at="2024-11-03T15:42:19 PKT" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserFromExcel -->
+        <test-method signature="testAuthenticateUserFromXML(java.lang.String,java.lang.String)[pri:2, instance:UserServiceTest@4d1c00d0]" started-at="2024-11-03T15:42:19 PKT" name="testAuthenticateUserFromXML" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[defaultUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[defaultPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateUserFromXML -->
+      </class> <!-- UserServiceTest -->
+      <class name="OrderTests.OrderRepositoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderRepositoryTest@4b2bac3f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindByIdWithExcelData()[pri:1, instance:OrderTests.OrderRepositoryTest@4b2bac3f]" started-at="2024-11-03T15:42:19 PKT" name="testFindByIdWithExcelData" finished-at="2024-11-03T15:42:19 PKT" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByIdWithExcelData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrderTests.OrderRepositoryTest@4b2bac3f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindByUserId(java.lang.Long)[pri:2, instance:OrderTests.OrderRepositoryTest@4b2bac3f]" started-at="2024-11-03T15:42:19 PKT" name="testFindByUserId" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByUserId -->
+      </class> <!-- OrderTests.OrderRepositoryTest -->
+      <class name="ProductRepositoryTest">
+        <test-method signature="testSaveAndFindById()[pri:1, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="testSaveAndFindById" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveAndFindById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDelete()[pri:2, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="testDelete" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFindAll()[pri:3, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="testFindAll" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindAll -->
+        <test-method signature="testFindByCategory()[pri:4, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="testFindByCategory" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByCategory -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveProductsFromExcel()[pri:5, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="testSaveProductsFromExcel" finished-at="2024-11-03T15:42:19 PKT" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveProductsFromExcel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveProductFromXML(java.lang.Long,java.lang.String,java.lang.String)[pri:6, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="testSaveProductFromXML" finished-at="2024-11-03T15:42:19 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ProductH]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Category3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveProductFromXML -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductRepositoryTest@4e08711f]" started-at="2024-11-03T15:42:19 PKT" name="setUp" finished-at="2024-11-03T15:42:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- ProductRepositoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
